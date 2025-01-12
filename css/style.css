@@ -32,22 +32,90 @@ a:hover {
     border-color: #0056b3;
 }
 
-#home {
+/* Hero Section Styles */
+.hero-section {
     background: linear-gradient(to bottom, #007bff, #0056b3); /* Gradient background */
     color: white;
-    padding: 5rem 0; /* Extra space for hero section */
+    padding: 5rem 0; /* Spacing */
     text-align: center;
-}
-
-#home h1 {
+  }
+  
+  .hero-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; /* Spacing between elements */
+  }
+  
+  @media (min-width: 768px) {
+    .hero-section .container {
+      flex-direction: row; /* Side-by-side layout for larger screens */
+      justify-content: space-between;
+    }
+  }
+  
+  .hero-text {
+    flex: 1;
+  }
+  
+  .hero-text h1 {
     font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-#home .btn-primary {
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-text .lead {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-text .btn-primary {
     font-size: 1.2rem;
     padding: 0.75rem 2rem;
     border-radius: 30px; /* Rounded buttons */
+  }
+
+  .hero-text .btn-primary:hover {
+    background-color: #003f88; /* Slightly darker shade on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Glow effect */
+}
+  
+  .hero-avatar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .avatar-image {
+    max-width: 300px; /* Control size of the avatar */
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional for rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for emphasis */
+    transition: transform 0.3s ease;
+  }
+
+  .avatar-image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+  
+  @media (max-width: 768px) {
+    .hero-text h1 {
+      font-size: 2rem;
+    }
+    .avatar-image {
+      max-width: 200px;
+    }
+  }
+
+/* Spacing adjustment for larger screens */
+@media (min-width: 768px) {
+    .hero-section .container {
+        gap: 3rem; /* Increased spacing between text and avatar */
+    }
 }
 
 #about {
