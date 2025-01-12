@@ -42,11 +42,17 @@ a:hover {
 
 /* Hero Section Styles */
 .hero-section {
-    background: linear-gradient(to bottom, #007bff, #004c99); /* Lighter start, darker end */
+    background: linear-gradient(to bottom, #41aad7, #007bff); /* Lighter and vibrant start, smooth transition */
     color: white;
-    padding: 5rem 0; /* Spacing */
+    padding: 5rem 0;
     text-align: center;
-  }
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
   
   .hero-section .container {
     display: flex;
@@ -127,9 +133,10 @@ a:hover {
 }
 
 #about {
-    background-color: #f8f9fa; /* Light gray background */
+    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
     padding: 4rem 0;
 }
+
 
 #about p {
     font-size: 1.1rem;
@@ -165,9 +172,10 @@ a:hover {
   }
 
   #skills {
+    background: linear-gradient(to bottom, #ffffff, #f0f4f8);
     padding: 4rem 0;
-  }
-  
+}
+
   #skills ul {
     list-style: none;
     padding: 0;
@@ -188,8 +196,8 @@ a:hover {
   }
   
 
-#projects {
-    background-color: #f8f9fa;
+  #projects {
+    background: linear-gradient(to bottom, #f8f9fa, #dde4eb); /* Soft bluish-gray */
     padding: 4rem 0;
 }
 
@@ -247,9 +255,11 @@ a:hover {
 
 
 #contact {
-    padding: 4rem 0;
+    background: linear-gradient(to bottom right, #f0fff0, #d4edda); /* Subtle green for freshness */
     text-align: center;
+    padding: 4rem 0;
 }
+
 
 #contact form {
     max-width: 600px;
@@ -300,12 +310,13 @@ a:hover {
   }
   
 
-footer {
-    background-color: #333;
+  footer {
+    background: linear-gradient(to top, #333, #555);
     color: white;
     text-align: center;
     padding: 1rem 0;
 }
+
 
 footer p {
     margin: 0;
@@ -475,4 +486,10 @@ section {
 section {
     animation: slideIn 1s ease-out forwards;
     will-change: opacity, transform;
+}
+
+section:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
