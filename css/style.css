@@ -12,6 +12,14 @@ h1, h2 {
     margin-bottom: 1rem;
 }
 
+
+h1:hover, h2:hover {
+    color: #0056b3; /* Darker blue */
+    cursor: pointer; /* Indicate interactivity */
+    text-shadow: 0px 4px 8px rgba(0, 123, 255, 0.4); /* A subtle glow */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
 a {
     color: #007bff;
     text-decoration: none;
@@ -34,7 +42,7 @@ a:hover {
 
 /* Hero Section Styles */
 .hero-section {
-    background: linear-gradient(to bottom, #007bff, #0056b3); /* Gradient background */
+    background: linear-gradient(to bottom, #007bff, #004c99); /* Lighter start, darker end */
     color: white;
     padding: 5rem 0; /* Spacing */
     text-align: center;
@@ -441,7 +449,6 @@ section {
     animation-delay: 1s;
 }
 
-/* Add animations for new sections */
 #education {
     animation-delay: 1.2s;
 }
