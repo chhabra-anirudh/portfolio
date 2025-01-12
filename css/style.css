@@ -88,29 +88,29 @@ a:hover {
     text-decoration: underline; /* Add underline on hover */
   }
 
-#skills {
+  #skills {
     padding: 4rem 0;
-}
-
-#skills ul {
+  }
+  
+  #skills ul {
     list-style: none;
     padding: 0;
-}
-
-#skills ul li {
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    position: relative;
-    padding-left: 1.5rem;
-}
-
-#skills ul li::before {
-    content: "✔"; /* Checkmark icon */
-    position: absolute;
-    left: 0;
-    color: #007bff; /* Primary color */
+  }
+  
+  #skills ul li {
     font-size: 1.2rem;
-}
+    margin-bottom: 0.75rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  #skills ul li i {
+    color: #007bff; /* Primary color for icons */
+    margin-right: 0.75rem;
+    font-size: 1.5rem;
+  }
+  
 
 #projects {
     background-color: #f8f9fa;
