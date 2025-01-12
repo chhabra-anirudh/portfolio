@@ -60,10 +60,11 @@
     </script>
   </head>
   <body>
+    <div id="top"></div>
     <!-- Navbar -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#">Anirudh Chhabra</a>
+        <a class="navbar-brand" href="#top">Anirudh Chhabra</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -130,16 +131,24 @@
           projects. Beyond coding, I value collaboration, creativity, and the
           opportunity to make a positive impact.
         </p>
-        <p>
-          <a href="mailto:anirudhchhabra33@gmail.com" target="_blank"
-            >📧 Email: anirudhchhabra33@gmail.com</a
-          >
-        </p>
-        <p>
-          <a href="http://linkedin.com/in/anirudh-chhabra-cs" target="_blank"
-            >🔗 LinkedIn Profile</a
-          >
-        </p>
+        <div class="contact-info">
+          <p>
+            <a href="mailto:anirudhchhabra33@gmail.com" class="icon-link" target="_blank" title="Email">
+              <i class="fas fa-envelope"></i> anirudhchhabra33@gmail.com
+            </a>
+          </p>
+          <p>
+            <a href="http://linkedin.com/in/anirudh-chhabra-cs" class="icon-link" target="_blank" title="LinkedIn">
+              <i class="fab fa-linkedin"></i> LinkedIn Profile
+            </a>
+          </p>
+          <p>
+            <a href="https://github.com/chhabra-anirudh" class="icon-link" target="_blank" title="GitHub">
+              <i class="fab fa-github"></i> GitHub Profile
+            </a>
+          </p>
+        </div>
+        
       </div>
     </section>
 
@@ -313,20 +322,35 @@
         <div class="project-item">
           <h3>Personal Portfolio Website</h3>
           <p>
-              This is my first major project, built using HTML, CSS, Bootstrap, and JavaScript. It marks the beginning of my journey as a computer science student, showcasing my skills, achievements, and aspirations.
+            This is my first major project, built using HTML, CSS, Bootstrap,
+            and JavaScript. It marks the beginning of my journey as a computer
+            science student, showcasing my skills, achievements, and
+            aspirations.
           </p>
           <ul class="feature-list">
-              <li>Responsive Web Design</li>
-              <li>Efficient Use of Animations, Flex Boxes, Grids, Containers & Boxes</li>
-              <li>Efficient Use of Bootstrap</li>
-              <li>Deployed on Netlify with CI/CD</li>
-              <li>Uses Git and Version-Control</li>
-              <li>Integrated Google Analytics for Insights</li>
+            <li>Responsive Web Design</li>
+            <li>
+              Efficient Use of Animations, Flex Boxes, Grids, Containers & Boxes
+            </li>
+            <li>Efficient Use of Bootstrap</li>
+            <li>Deployed on Netlify with CI/CD</li>
+            <li>Uses Git and Version-Control</li>
+            <li>Integrated Google Analytics for Insights</li>
           </ul>
-          <a href="https://github.com/chhabra-anirudh/portfolio" target="_blank" class="btn btn-secondary">View on GitHub</a>
-          <a href="https://anirudh-chhabra.netlify.app/" target="_blank" class="btn btn-primary">Live Demo</a>
-      </div>
-      
+          <a
+            href="https://github.com/chhabra-anirudh/portfolio"
+            target="_blank"
+            class="btn btn-secondary"
+            >View on GitHub</a
+          >
+          <a
+            href="https://anirudh-chhabra.netlify.app/"
+            target="_blank"
+            class="btn btn-primary"
+            >Live Demo</a
+          >
+        </div>
+
         <div class="project-item">
           <h3>
             Voluntary Community Service Project to Help the Disabled in the
@@ -371,22 +395,39 @@
       <div class="container">
         <h2>Contact Me</h2>
         <p>If you'd like to connect or collaborate, feel free to reach out!</p>
-        <p>
-          📧
-          <a
-            href="mailto:anirudhchhabra33@gmail.com"
-            target="_blank"
-            class="text-primary"
-            >anirudhchhabra33@gmail.com</a
-          ><br />
-          🔗
-          <a
-            href="http://linkedin.com/in/anirudh-chhabra-cs"
-            target="_blank"
-            class="text-primary"
-            >LinkedIn Profile</a
-          >
-        </p>
+        <div class="contact-handles">
+          <p>
+            <a
+              href="mailto:anirudhchhabra33@gmail.com"
+              target="_blank"
+              class="icon-link"
+              title="Email"
+            >
+              <i class="fas fa-envelope"></i> anirudhchhabra33@gmail.com
+            </a>
+          </p>
+          <p>
+            <a
+              href="http://linkedin.com/in/anirudh-chhabra-cs"
+              target="_blank"
+              class="icon-link"
+              title="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i> LinkedIn Profile
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://github.com/chhabra-anirudh"
+              target="_blank"
+              class="icon-link"
+              title="GitHub"
+            >
+              <i class="fab fa-github"></i> GitHub Profile
+            </a>
+          </p>
+        </div>
+        
         <form
           action="https://formspree.io/f/mrbbrrlq"
           method="POST"
@@ -429,25 +470,30 @@
 
     <!-- Footer -->
     <footer class="text-center py-3 bg-dark text-white">
-      <p>&copy; <span id="year"></span> Anirudh Chhabra. All Rights Reserved.</p>
       <p>
-        <a
-          href="mailto:anirudhchhabra33@gmail.com"
-          class="text-white me-3"
-          target="_blank"
-          title="Email"
-        >
+        &copy; <span id="year"></span> Anirudh Chhabra. All Rights Reserved.
+      </p>
+      <div class="footer-icons">
+        <a href="mailto:anirudhchhabra33@gmail.com" class="icon" title="Email">
           <i class="fas fa-envelope"></i>
         </a>
         <a
-          href="http://linkedin.com/in/anirudh-chhabra-cs"
-          class="text-white me-3"
+          href="https://linkedin.com/in/anirudh-chhabra-cs"
+          class="icon"
           target="_blank"
           title="LinkedIn"
         >
           <i class="fab fa-linkedin"></i>
         </a>
-      </p>
+        <a
+          href="https://github.com/chhabra-anirudh"
+          class="icon"
+          target="_blank"
+          title="GitHub"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
     </footer>
 
     <!-- Bootstrap JS -->
@@ -465,7 +511,7 @@
     </script>
     <script>
       const currentYear = new Date().getFullYear();
-      document.getElementById('year').textContent = currentYear;
+      document.getElementById("year").textContent = currentYear;
     </script>
     <script>
       document.querySelector("form").addEventListener("submit", function (e) {
