@@ -133,7 +133,7 @@ a:hover {
 }
 
 #about {
-    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+    background: linear-gradient(to bottom, #f7f7f7, #eaeaea);
     padding: 4rem 0;
 }
 
@@ -194,7 +194,81 @@ a:hover {
     margin-right: 0.75rem;
     font-size: 1.5rem;
   }
-  
+  #education {
+    background: linear-gradient(to bottom, #ffffff, #f4f4f4); /* Subtle gradient for depth */
+    padding: 4rem 0;
+    color: #333; /* Text color for readability */
+}
+
+#education ul {
+    list-style: none; /* Remove bullets */
+    padding: 0;
+}
+
+#education li {
+    background: #ffffff; /* White background for cards */
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#education ul li i {
+    font-size: 1.5rem; /* Icon size */
+    margin-right: 10px; /* Space between icon and text */
+    vertical-align: middle; /* Align icon with text */
+}
+
+#education ul li {
+    border-left: 5px solid #007bff; /* Blue marker on the left */
+    padding-left: 1.5rem; /* Indent the content */
+    background: #ffffff; /* Card-like background */
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#education ul li:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+#education p {
+    color: #555; /* Softer text color for details */
+    margin: 0.5rem 0;
+}
+
+
+
+  #volunteering {
+    background: linear-gradient(to bottom, #f9f9f9, #eaf3f9), 
+                url('https://www.transparenttextures.com/patterns/soft-paper.png'); /* Soft paper texture */
+    padding: 4rem 0;
+    color: #2c3e50; /* Darker text for better contrast */
+}
+
+#volunteering ul {
+    list-style: none; /* Remove bullets */
+    padding: 0;
+}
+
+#volunteering li {
+    background: #ffffff; /* White card-like background for list items */
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#volunteering li:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+ 
 
   #projects {
     background: linear-gradient(to bottom, #f8f9fa, #dde4eb); /* Soft bluish-gray */
@@ -220,6 +294,11 @@ a:hover {
 .project-item p {
     font-size: 1rem; 
     line-height: 1.5; 
+}
+
+#projects .project-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .project-item .btn {
@@ -255,20 +334,30 @@ a:hover {
 
 
 #contact {
-    background: linear-gradient(to bottom right, #f0fff0, #d4edda); /* Subtle green for freshness */
+    background: linear-gradient(to bottom right, #ffffff, #e9ecef); /* Soft neutral gradient */
     text-align: center;
     padding: 4rem 0;
 }
 
 
+
 #contact form {
     max-width: 600px;
     margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 #contact form .form-control {
     border-radius: 5px;
     border: 1px solid #ddd;
+}
+
+#contact form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 #contact form .btn-primary {
@@ -280,35 +369,27 @@ a:hover {
 }
 
 .contact-handles {
-    text-align: center;
-    margin-bottom: 20px; /* Space between handles and the form */
-    font-size: 16px; /* Adjust text size */
-    line-height: 2; /* Space between lines */
-    color: #2C3E50; /* Midnight blue color */
-  }
-  
-  .contact-handles p {
-    margin: 0 0 10px; /* Space between each line */
-  }
-  
-  .icon-link {
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-handles .icon-link {
+    display: flex;
     align-items: center;
-    text-decoration: none; /* Remove underline */
-    color: #2C3E50; /* Default text color */
+    padding: 0.5rem 1rem;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-  }
-  
-  .icon-link i {
-    font-size: 18px; /* Icon size */
-    margin-right: 8px; /* Space between icon and text */
-  }
-  
-  .icon-link:hover {
-    color: #27AE60; /* Green hover color */
-    text-decoration: underline; /* Add underline on hover */
-  }
-  
+}
+
+.contact-handles .icon-link:hover {
+    background: #007bff;
+    color: white;
+    transform: scale(1.05);
+}
 
   footer {
     background: linear-gradient(to top, #333, #555);
@@ -349,38 +430,12 @@ footer p {
     color: #fff; /* White icon color on hover */
     transform: translateY(-3px); /* Slightly lift icon on hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-  }
-  
+  } 
 
-#volunteering ul, #education ul {
-    list-style: none; /* Remove default bullets */
-    padding: 0;
+  #about h2, #skills h2, #education h2,#volunteering h2, #projects h2, #contact h2 {
+    text-align: center;
+    margin-bottom: 2rem;
 }
-
-#volunteering li, #education li {
-    margin-bottom: 1.5rem;
-    padding-left: 1.5rem;
-    position: relative;
-}
-
-#volunteering li::before, #education li::before {
-    content: "✔"; /* Checkmark for items */
-    position: absolute;
-    left: 0;
-    color: #007bff; /* Primary color */
-    font-size: 1.2rem;
-}
-
-#volunteering p, #education p {
-    margin: 0.5rem 0 0;
-    color: #555;
-}
-
-#education h3 {
-    margin-top: 2rem;
-    color: #333;
-}
-
 
 /* For smaller devices */
 @media (max-width: 768px) {
