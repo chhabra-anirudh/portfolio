@@ -545,7 +545,7 @@
     <script>
       document.querySelector("form").addEventListener("submit", function (e) {
         const email = document.querySelector("#email").value;
-        if (!email.includes("@")) {
+        if (!email.includes("@") || !email.includes(".")) {
           e.preventDefault();
           alert("Please enter a valid email address.");
         }
