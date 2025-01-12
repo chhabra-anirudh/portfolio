@@ -429,7 +429,7 @@
 
     <!-- Footer -->
     <footer class="text-center py-3 bg-dark text-white">
-      <p>&copy; 2025 Anirudh Chhabra. All Rights Reserved.</p>
+      <p>&copy; <span id="year"></span> Anirudh Chhabra. All Rights Reserved.</p>
       <p>
         <a
           href="mailto:anirudhchhabra33@gmail.com"
@@ -464,9 +464,8 @@
       });
     </script>
     <script>
-      const yearSpan = document.createElement("span");
-      yearSpan.textContent = new Date().getFullYear();
-      document.querySelector("footer p").appendChild(yearSpan);
+      const currentYear = new Date().getFullYear();
+      document.getElementById('year').textContent = currentYear;
     </script>
     <script>
       document.querySelector("form").addEventListener("submit", function (e) {
