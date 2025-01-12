@@ -370,6 +370,7 @@ a:hover {
 
 .contact-handles {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
     margin-bottom: 2rem;
@@ -383,12 +384,25 @@ a:hover {
     border-radius: 5px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    font-size: 1rem;
+    min-width: 100px;
 }
+
+.contact-handles .icon-link i {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 1.2rem; /* Icon size */
+    transition: transform 0.3s ease;
+}
+
 
 .contact-handles .icon-link:hover {
     background: #007bff;
     color: white;
     transform: scale(1.05);
+}
+
+.contact-handles .icon-link:hover i {
+    transform: scale(1.2); /* Slightly enlarge icon */
 }
 
   footer {
@@ -547,4 +561,31 @@ section:hover {
     transform: scale(1.01);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .contact-handles {
+        gap: 0.5rem; /* Reduce space between items */
+    }
+
+    .contact-handles .icon-link {
+        font-size: 0.9rem; /* Reduce font size */
+        padding: 0.4rem 0.8rem; /* Adjust padding */
+        min-width: 80px; /* Decrease minimum width */
+    }
+
+    .contact-handles .icon-link i {
+        font-size: 1rem; /* Reduce icon size */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-handles .icon-link {
+        flex: 1 1 100%; /* Each handle takes full width */
+        justify-content: center; /* Center text and icon */
+    }
+
+    .contact-handles {
+        gap: 0.3rem; /* Minimize gap for small screens */
+    }
 }
