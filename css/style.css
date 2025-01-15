@@ -331,6 +331,15 @@ a:hover {
     line-height: 1.5;
 }
 
+.project-screenshot {
+    max-width: 80%; 
+    max-height: 400px; 
+    margin: 10px 0; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    object-fit: contain; 
+  }
+  
 
 #contact {
     background: linear-gradient(to bottom right, #ffffff, #e9ecef); /* Soft neutral gradient */
