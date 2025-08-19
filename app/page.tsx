@@ -311,9 +311,9 @@ export default function Portfolio() {
                 <div className="flex gap-3 pt-2">
                   <Button
                     size="sm"
-                    variant="outline"
+                    variant="secondary"
                     asChild
-                    className="hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-105 bg-transparent"
+                    className="hover:bg-emerald-600 hover:text-white transition-all duration-300 hover:scale-105"
                   >
                     <a href="https://linkedin.com/in/anirudh-chhabra-cs" target="_blank" rel="noopener noreferrer">
                       <Linkedin className="w-4 h-4 mr-1" />
@@ -322,9 +322,9 @@ export default function Portfolio() {
                   </Button>
                   <Button
                     size="sm"
-                    variant="outline"
+                    variant="secondary"
                     asChild
-                    className="hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-105 bg-transparent"
+                    className="hover:bg-emerald-600 hover:text-white transition-all duration-300 hover:scale-105"
                   >
                     <a href="https://github.com/chhabra-anirudh" target="_blank" rel="noopener noreferrer">
                       <Github className="w-4 h-4 mr-1" />
@@ -834,10 +834,10 @@ export default function Portfolio() {
 
                     {project.github !== "#" && (
                       <Button
-                        variant="outline"
+                        variant="secondary"
                         size="sm"
                         asChild
-                        className="w-full hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-105 bg-transparent"
+                        className="w-full hover:bg-emerald-600 hover:text-white transition-all duration-300 hover:scale-105"
                       >
                         <a href={project.github} target="_blank" rel="noopener noreferrer">
                           <Github className="w-4 h-4 mr-2" />
@@ -1042,9 +1042,9 @@ export default function Portfolio() {
                       </a>
                     </Button>
                     <Button
-                      variant="outline"
+                      variant="secondary"
                       asChild
-                      className="hover:scale-105 transition-transform bg-transparent shadow-lg hover:shadow-xl"
+                      className="hover:scale-105 transition-transform hover:bg-emerald-600 hover:text-white shadow-lg hover:shadow-xl"
                     >
                       <a href="https://linkedin.com/in/anirudh-chhabra-cs" target="_blank" rel="noopener noreferrer">
                         <Linkedin className="w-4 h-4" />
