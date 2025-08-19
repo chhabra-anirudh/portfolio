@@ -621,8 +621,7 @@ export default function Portfolio() {
                   <li className="flex items-start gap-2 group/item">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0 group-hover/item:scale-150 transition-transform duration-300"></div>
                     <span>
-                      Modernized BAS graphics for 35+ buildings using Niagara Tridium, BQL, and NEQL for real-time data
-                      integration
+                      Modernized BAS graphics for 20+ buildings using Niagara Tridium, BQL, and NEQL for real-time data integration
                     </span>
                   </li>
                   <li className="flex items-start gap-2 group/item">
