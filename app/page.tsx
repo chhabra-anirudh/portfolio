@@ -242,7 +242,7 @@ export default function Portfolio() {
                 variant="outline"
                 asChild
                 size="lg"
-                className="hover:scale-105 transition-all duration-300 bg-transparent hover:bg-primary hover:text-primary-foreground shadow-lg hover:shadow-xl"
+                className="hover:scale-105 transition-all duration-300 bg-transparent hover:bg-emerald-600 hover:text-white shadow-lg hover:shadow-xl border-emerald-600/20 hover:border-emerald-600"
               >
                 <a href="https://github.com/chhabra-anirudh" target="_blank" rel="noopener noreferrer">
                   <Github className="w-4 h-4 mr-2" />
@@ -253,7 +253,7 @@ export default function Portfolio() {
                 variant="outline"
                 asChild
                 size="lg"
-                className="hover:scale-105 transition-all duration-300 bg-transparent hover:bg-primary hover:text-primary-foreground shadow-lg hover:shadow-xl"
+                className="hover:scale-105 transition-all duration-300 bg-transparent hover:bg-emerald-600 hover:text-white shadow-lg hover:shadow-xl border-emerald-600/20 hover:border-emerald-600"
               >
                 <a href="https://linkedin.com/in/anirudh-chhabra-cs" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="w-4 h-4 mr-2" />
