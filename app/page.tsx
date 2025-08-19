@@ -157,12 +157,15 @@ export default function Portfolio() {
                       scrollToSection(item.id)
                       setIsMobileMenuOpen(false)
                     }}
-                    className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
+                    className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 relative ${
                       activeSection === item.id
-                        ? "text-primary bg-accent"
-                        : "text-muted-foreground hover:text-primary hover:bg-accent"
+                        ? "text-primary"
+                        : "text-muted-foreground hover:text-primary hover:bg-accent/50"
                     }`}
                   >
+                    {activeSection === item.id && (
+                      <div className="absolute left-0 top-0 bottom-0 w-1 bg-primary rounded-r-full" />
+                    )}
                     {item.label}
                   </button>
                 ))}
