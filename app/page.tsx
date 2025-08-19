@@ -746,10 +746,11 @@ export default function Portfolio() {
               },
               {
                 title: "Portfolio Website",
-                description: "Personal portfolio deployed with CI/CD and integrated analytics for engagement tracking.",
-                tech: ["HTML", "CSS", "Bootstrap", "JavaScript"],
+                description:
+                  "Modern, responsive portfolio website built with Next.js featuring dark/light themes, smooth animations, and mobile-optimized navigation.",
+                tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
                 status: "live",
-                highlights: ["Netlify deployment", "Google Analytics", "Responsive design"],
+                highlights: ["Dark/light theme toggle", "Mobile-responsive design", "Smooth scroll animations"],
                 github: "https://github.com/chhabra-anirudh/portfolio",
               },
               {
