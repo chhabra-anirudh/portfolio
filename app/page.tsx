@@ -794,15 +794,6 @@ export default function Portfolio() {
                 ],
                 github: "https://github.com/jovitta-seb/uwreq",
               },
-              {
-                title: "Portfolio Website",
-                description:
-                  "Modern, responsive portfolio website built with Next.js featuring dark/light themes, smooth animations, and mobile-optimized navigation.",
-                tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-                status: "live",
-                highlights: ["Dark/light theme toggle", "Mobile-responsive design", "Smooth scroll animations"],
-                github: "https://github.com/chhabra-anirudh/portfolio",
-              },
             ].map((project, index) => (
               <Card
                 key={project.title}
