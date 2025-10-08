@@ -16,6 +16,7 @@ import {
   ArrowUp,
   ChevronDown,
   Sparkles,
+  FileText,
 } from "lucide-react"
 import { useEffect, useState } from "react"
 
@@ -197,31 +198,31 @@ export default function Portfolio() {
               <span className="text-primary font-medium">AI/ML research</span>, diffusion models, and full-stack
               development
             </p>
-            <div className="flex flex-wrap justify-center gap-4 mb-8 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-400">
+            <div className="mb-8 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-400">
               <Badge
                 variant="secondary"
-                className="text-sm px-4 py-2 hover:scale-105 hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                className="text-sm px-4 py-2 hover:scale-105 hover:bg-primary hover:text-primary-foreground transition-all duration-300 m-1"
               >
                 <GraduationCap className="w-4 h-4 mr-2" />
                 2A Term - UWaterloo CS
               </Badge>
               <Badge
                 variant="secondary"
-                className="text-sm px-4 py-2 hover:scale-105 hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                className="text-sm px-4 py-2 hover:scale-105 hover:bg-primary hover:text-primary-foreground transition-all duration-300 m-1"
               >
                 <Code className="w-4 h-4 mr-2" />
                 AI/ML Research
               </Badge>
               <Badge
                 variant="secondary"
-                className="text-sm px-4 py-2 hover:scale-105 hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                className="text-sm px-4 py-2 hover:scale-105 hover:bg-primary hover:text-primary-foreground transition-all duration-300 m-1"
               >
                 <Briefcase className="w-4 h-4 mr-2" />
                 Co-op Experience
               </Badge>
               <Badge
                 variant="secondary"
-                className="text-sm px-4 py-2 hover:scale-105 hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                className="text-sm px-4 py-2 hover:scale-105 hover:bg-primary hover:text-primary-foreground transition-all duration-300 m-1"
               >
                 <Award className="w-4 h-4 mr-2" />
                 Multiple Scholarships
@@ -237,6 +238,17 @@ export default function Portfolio() {
                   <Mail className="w-4 h-4 mr-2" />
                   Get In Touch
                 </button>
+              </Button>
+              <Button
+                variant="secondary"
+                asChild
+                size="lg"
+                className="hover:scale-105 transition-all duration-300 hover:bg-emerald-600 hover:text-white shadow-lg hover:shadow-xl"
+              >
+                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                  <FileText className="w-4 h-4 mr-2" />
+                  Resume
+                </a>
               </Button>
               <Button
                 variant="secondary"
@@ -409,7 +421,7 @@ export default function Portfolio() {
                     <p className="text-muted-foreground">2A Term (Fall 2025)</p>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-3 text-primary">Selected Coursework</h4>
+                    <h4 className="font-semibold mb-3 text-primary">Relevant Coursework</h4>
                     <div className="flex flex-wrap gap-2">
                       <Badge
                         variant="secondary"
@@ -421,7 +433,7 @@ export default function Portfolio() {
                         variant="secondary"
                         className="hover:bg-primary hover:text-primary-foreground transition-colors hover:scale-105"
                       >
-                        Object-Oriented Programming
+                        OOP
                       </Badge>
                       <Badge
                         variant="secondary"
@@ -467,20 +479,20 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                title: "Languages",
-                skills: ["Python", "C/C++", "Java", "JavaScript", "Dart", "HTML", "CSS", "Bash"],
+                title: "Programming Languages",
+                skills: ["C/C++", "Python", "Java", "JavaScript", "Dart", "HTML/CSS"],
               },
               {
                 title: "Frameworks & Libraries",
-                skills: ["React", "Flutter", "Django", "Express", "Bootstrap", "Firebase"],
+                skills: ["React", "Next.js", "Node.js", "Express", "Flutter", "Bootstrap", "Tailwind CSS", "Figma"],
               },
               {
-                title: "Developer Tools",
-                skills: ["Git", "VS Code", "IntelliJ", "PyCharm", "Docker", "Niagara Workbench"],
+                title: "Systems & Databases",
+                skills: ["PostgreSQL", "MongoDB", "Firebase", "REST APIs", "Niagara Workbench (N4)"],
               },
               {
-                title: "Databases & Design",
-                skills: ["PostgreSQL", "MongoDB", "Firebase Firestore", "REST APIs", "Figma", "Canva"],
+                title: "Tools",
+                skills: ["Git", "Linux", "Bash"],
               },
             ].map((category, index) => (
               <Card
@@ -604,15 +616,15 @@ export default function Portfolio() {
                     </div>
                     <div>
                       <CardTitle className="text-xl group-hover:text-primary transition-colors">
-                        Frontend Graphics Designer - Co-op
+                        Frontend Developer & UI/UX Designer - Co-op
                       </CardTitle>
                       <CardDescription className="text-base mt-1 text-muted-foreground group-hover:text-primary transition-colors">
-                        University of Waterloo - Plant Operations
+                        Plant Operations Department - University of Waterloo
                       </CardDescription>
                     </div>
                   </div>
                   <Badge variant="outline" className="self-start sm:self-auto">
-                    May 2025 – August 2025
+                    May 2025 – Aug 2025
                   </Badge>
                 </div>
               </CardHeader>
@@ -621,19 +633,23 @@ export default function Portfolio() {
                   <li className="flex items-start gap-2 group/item">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0 group-hover/item:scale-150 transition-transform duration-300"></div>
                     <span>
-                      Modernized BAS graphics for 20+ buildings using Niagara Tridium, BQL, and NEQL for real-time data integration
+                      Collaborated in cross-functional team of engineers to modernize building automation dashboards
+                      across 20+ facilities
                     </span>
                   </li>
                   <li className="flex items-start gap-2 group/item">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0 group-hover/item:scale-150 transition-transform duration-300"></div>
                     <span>
-                      Created interactive, UX-optimized dashboards for HVAC, AHU, and Chiller systems, improving
-                      operator efficiency
+                      Designed and implemented responsive HVAC UIs that enhanced operator efficiency and cut deployment
+                      time by 30%
                     </span>
                   </li>
                   <li className="flex items-start gap-2 group/item">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0 group-hover/item:scale-150 transition-transform duration-300"></div>
-                    <span>Researched and proposed automation workflows to cut deployment time by 30%</span>
+                    <span>
+                      Automated repetitive design and configuration workflows, bridging engineering and UX to streamline
+                      the process
+                    </span>
                   </li>
                 </ul>
                 <div className="flex flex-wrap gap-2 mt-6">
@@ -727,21 +743,56 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "AlgoPlayground",
+                title: "Dedup Storage",
                 description:
-                  "Interactive platform for visualizing and testing sorting, graph, and search algorithms with real-time animations.",
-                tech: ["React", "Node.js", "Express", "MongoDB"],
-                status: "in-progress",
-                highlights: ["Sub-200ms render times", "Real-time animations", "Algorithm execution API"],
-                github: "#",
+                  "C++ deduplicated file storage system that splits files into chunks, storing only unique chunks with real-time stats visualization.",
+                tech: ["C++", "Node.js", "React", "Express", "Multer"],
+                status: "completed",
+                highlights: [
+                  "Custom C++ CLI for cross-platform file operations",
+                  "React frontend with real-time deduplication efficiency stats",
+                  "Demonstrated storage savings with overlapping file uploads",
+                ],
+                github: "https://github.com/chhabra-anirudh/dedup-storage",
               },
               {
-                title: "TaskFlow",
-                description: "Full-stack task management app with JWT authentication, tagging, and deadline reminders.",
-                tech: ["Django", "PostgreSQL", "Docker"],
-                status: "in-progress",
-                highlights: ["CI/CD pipeline", "95% unit test coverage", "Containerized deployment"],
-                github: "#",
+                title: "Contiguous Memory Allocator",
+                description:
+                  "Simplified model of C's contiguous memory and heap with custom cmalloc and cfree functions.",
+                tech: ["C"],
+                status: "completed",
+                highlights: [
+                  "Linked data structures for allocation tracking",
+                  "Gap detection and variable-sized node management",
+                  "Debug utility for memory layout visualization",
+                ],
+                github: "https://github.com/chhabra-anirudh/contiguous-memory-allocator",
+              },
+              {
+                title: "Municipal Energy Dashboard",
+                description:
+                  "Dynamic React dashboard visualizing municipal energy consumption and GHG emissions with intelligent filters.",
+                tech: ["React", "Chart.js", "Tailwind CSS"],
+                status: "completed",
+                highlights: [
+                  "Intelligent filters and KPIs for data-driven analysis",
+                  "Responsive Chart.js visualizations (bar, line, pie)",
+                  "Automated trend insights for diverse facilities",
+                ],
+                github: "https://github.com/chhabra-anirudh/municipal-energy-dashboard",
+              },
+              {
+                title: "OnTrack",
+                description:
+                  "Course planner for UW students to track graduation requirements with automated prerequisite validation.",
+                tech: ["Node.js", "Express", "Playwright", "Bootstrap"],
+                status: "completed",
+                highlights: [
+                  "Automated scraping of 4,000+ UW course pages",
+                  "Prerequisite validation logic in JSON",
+                  "Collaborative development via GitHub PR workflows",
+                ],
+                github: "https://github.com/jovitta-seb/uwreq",
               },
               {
                 title: "Portfolio Website",
@@ -751,33 +802,6 @@ export default function Portfolio() {
                 status: "live",
                 highlights: ["Dark/light theme toggle", "Mobile-responsive design", "Smooth scroll animations"],
                 github: "https://github.com/chhabra-anirudh/portfolio",
-              },
-              {
-                title: "Space Game",
-                description:
-                  "Interactive arcade game with directional shooting, health tracking, and collision mechanics.",
-                tech: ["Python", "Turtle"],
-                status: "completed",
-                highlights: ["Projectile logic", "Collision detection", "Real-time UI updates"],
-                github: "https://github.com/chhabra-anirudh/Space-Game-Python",
-              },
-              {
-                title: "Snake Game",
-                description:
-                  "Classic Snake game with increasing difficulty, speed progression, and real-time scoreboard.",
-                tech: ["Python", "Turtle"],
-                status: "completed",
-                highlights: ["Game loops", "Collision detection", "High score tracking"],
-                github: "https://github.com/chhabra-anirudh/Snake-Game-Python",
-              },
-              {
-                title: "AccessTray",
-                description:
-                  "Community impact project designing custom removable tray for wheelchair-bound user workplace access.",
-                tech: ["Design", "Prototyping"],
-                status: "completed",
-                highlights: ["Community impact", "Collaborative design", "Accessibility focus"],
-                github: "#",
               },
             ].map((project, index) => (
               <Card
